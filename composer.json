@@ -1,0 +1,25 @@
+{
+    "name": "figlab/coding-standard",
+    "description": "PHPCS coding-standard for Laravel applications.",
+    "license": "MIT",
+    "type": "phpcodesniffer-standard",
+    "require": {
+        "php": "^8.2",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "slevomat/coding-standard": "^8.14",
+        "squizlabs/php_codesniffer": "^3.9",
+        "interaction-design-foundation/coding-standard": "^0.2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "FigLabCodingStandard\\": "FigLabCodingStandard"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
