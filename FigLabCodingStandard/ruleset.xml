@@ -52,19 +52,47 @@
         <exclude-pattern>./</exclude-pattern>
     </rule>
 
-    <!-- Only allow in providers, used mostly in Filament providers. -->
+    <!-- Keep one blank line between phpdoc description and annotations -->
+    <rule ref="SlevomatCodingStandard.Commenting.DocCommentSpacing">
+        <properties>
+            <property name="linesCountBetweenDescriptionAndAnnotations" value="1"/>
+        </properties>
+    </rule>
+
+    <!-- Only allow named arguments in providers, used mostly in Filament providers. -->
     <rule ref="SlevomatCodingStandard.Functions.DisallowNamedArguments.DisallowedNamedArgument">
         <exclude-pattern>./bootstrap/*.php</exclude-pattern>
-        <exclude-pattern>*/*Provider.php</exclude-pattern>
+        <exclude-pattern>./app/Providers/*.php</exclude-pattern>
+        <exclude-pattern>./modules/*/src/Providers/*.php</exclude-pattern>
     </rule>
 
     <!-- Only allow in providers, because boot() and register() methods are sometimes empty. -->
     <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction.EmptyFunction">
-        <exclude-pattern>*/*Provider.php</exclude-pattern>
+        <exclude-pattern>./app/Providers/*.php</exclude-pattern>
+        <exclude-pattern>./modules/*/src/Providers/*.php</exclude-pattern>
     </rule>
 
     <!-- We will allow some level of complexity in providers, because some of them come from 3rd party packages. -->
     <rule ref="SlevomatCodingStandard.Complexity.Cognitive.ComplexityTooHigh">
-        <exclude-pattern>*/*Provider.php</exclude-pattern>
+        <exclude-pattern>./app/Providers/*.php</exclude-pattern>
+        <exclude-pattern>./modules/*/src/Providers/*.php</exclude-pattern>
+    </rule>
+
+    <!-- We will allow large function bodies in providers, because some of them come from 3rd party packages. -->
+    <rule ref="SlevomatCodingStandard.Functions.FunctionLength.FunctionLength">
+        <exclude-pattern>./app/Providers/*.php</exclude-pattern>
+        <exclude-pattern>./modules/*/src/Providers/*.php</exclude-pattern>
+    </rule>
+
+    <!-- Migration classes don't have namespaces. -->
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <exclude-pattern>./database/migrations/*</exclude-pattern>
+        <exclude-pattern>./modules/*/database/migrations/*</exclude-pattern>
+    </rule>
+
+    <!-- Migration classes don't have to match the file name. -->
+    <rule ref="Squiz.Classes.ClassFileName.NoMatch">
+        <exclude-pattern>./database/migrations/*</exclude-pattern>
+        <exclude-pattern>./modules/*/database/migrations/*</exclude-pattern>
     </rule>
 </ruleset>
