@@ -59,11 +59,9 @@
         </properties>
     </rule>
 
-    <!-- Only allow named arguments in providers, used mostly in Filament providers. -->
+    <!-- Allow named arguments as it improves code readability. -->
     <rule ref="SlevomatCodingStandard.Functions.DisallowNamedArguments.DisallowedNamedArgument">
-        <exclude-pattern>./bootstrap/*.php</exclude-pattern>
-        <exclude-pattern>./app/Providers/*.php</exclude-pattern>
-        <exclude-pattern>./modules/*/src/Providers/*.php</exclude-pattern>
+        <exclude-pattern>./</exclude-pattern>
     </rule>
 
     <!-- Only allow in providers, because boot() and register() methods are sometimes empty. -->
