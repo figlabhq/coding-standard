@@ -8,7 +8,7 @@
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
         "slevomat/coding-standard": "^8.14",
         "squizlabs/php_codesniffer": "^3.9",
-        "interaction-design-foundation/coding-standard": "^0.2.3"
+        "interaction-design-foundation/coding-standard": "^0.3"
     },
     "autoload": {
         "psr-4": {

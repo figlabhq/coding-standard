@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "886e878fdef9a29c035dcb1c07356692",
+    "content-hash": "3833773eb706b8ee65ef6abb3954fdfc",
     "packages": [
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -86,27 +86,28 @@
         },
         {
             "name": "interaction-design-foundation/coding-standard",
-            "version": "0.2.3",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/InteractionDesignFoundation/coding-standard.git",
-                "reference": "bfafc493e5b3e38e5f6e3282f0239f6505615e87"
+                "reference": "7294f3c1957f29aef55790b326b1bf531c723443"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/InteractionDesignFoundation/coding-standard/zipball/bfafc493e5b3e38e5f6e3282f0239f6505615e87",
-                "reference": "bfafc493e5b3e38e5f6e3282f0239f6505615e87",
+                "url": "https://api.github.com/repos/InteractionDesignFoundation/coding-standard/zipball/7294f3c1957f29aef55790b326b1bf531c723443",
+                "reference": "7294f3c1957f29aef55790b326b1bf531c723443",
                 "shasum": ""
             },
             "require": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
                 "php": "^8.2",
-                "slevomat/coding-standard": "^8.14",
-                "squizlabs/php_codesniffer": "^3.9"
+                "slevomat/coding-standard": "^8.15",
+                "squizlabs/php_codesniffer": "^3.10"
             },
             "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.59",
                 "phpunit/phpunit": "^10.5",
-                "vimeo/psalm": "^5.22"
+                "vimeo/psalm": "^5.25"
             },
             "type": "phpcodesniffer-standard",
             "autoload": {
@@ -121,22 +122,22 @@
             "description": "IxDF Standard for PHP_CodeSniffer complements Consistence Coding Standard by providing sniffs with additional checks.",
             "support": {
                 "issues": "https://github.com/InteractionDesignFoundation/coding-standard/issues",
-                "source": "https://github.com/InteractionDesignFoundation/coding-standard/tree/0.2.3"
+                "source": "https://github.com/InteractionDesignFoundation/coding-standard/tree/0.3.0"
             },
-            "time": "2024-04-01T10:05:17+00:00"
+            "time": "2024-07-16T23:26:25+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.29.0",
+            "version": "1.29.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "536889f2b340489d328f5ffb7b02bb6b183ddedc"
+                "reference": "fcaefacf2d5c417e928405b71b400d4ce10daaf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/536889f2b340489d328f5ffb7b02bb6b183ddedc",
-                "reference": "536889f2b340489d328f5ffb7b02bb6b183ddedc",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/fcaefacf2d5c417e928405b71b400d4ce10daaf4",
+                "reference": "fcaefacf2d5c417e928405b71b400d4ce10daaf4",
                 "shasum": ""
             },
             "require": {
@@ -168,9 +169,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.29.0"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.29.1"
             },
-            "time": "2024-05-06T12:04:23+00:00"
+            "time": "2024-05-31T08:52:43+00:00"
         },
         {
             "name": "slevomat/coding-standard",
@@ -239,16 +240,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.9.2",
+            "version": "3.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "aac1f6f347a5c5ac6bc98ad395007df00990f480"
+                "reference": "86e5f5dd9a840c46810ebe5ff1885581c42a3017"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/aac1f6f347a5c5ac6bc98ad395007df00990f480",
-                "reference": "aac1f6f347a5c5ac6bc98ad395007df00990f480",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/86e5f5dd9a840c46810ebe5ff1885581c42a3017",
+                "reference": "86e5f5dd9a840c46810ebe5ff1885581c42a3017",
                 "shasum": ""
             },
             "require": {
@@ -315,7 +316,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-04-23T20:25:34+00:00"
+            "time": "2024-07-21T23:26:44+00:00"
         }
     ],
     "packages-dev": [],
